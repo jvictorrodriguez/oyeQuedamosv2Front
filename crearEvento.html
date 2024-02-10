@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script type="module" src="./js/utils.js"></script>
+    <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./js/crearEvento.js"></script>
+    <title>Crear Evento</title>
+</head>
+<body>
+    <header>
+        <h1>Alta Nuevo Evento</h1>
+    </header>
+    <!-- barra de navegación -->
+    <div id="navbarContainer"></div>
+    
+    <!-- contenido ventana -->
+    <div class="container"></div>
+
+    
+    <img id="previewImage" alt="imagen del evento" src="./imagenes/playa.jpg">
+    <input type="file" id="imageUpload" class="button" accept="image/*">
+    <span id="mensaje"></span>
+        <form action="">
+            <label for="description">Descripción</label>
+            <input type="text" id="description">
+            <span></span>
+            <label for="checkInDate">Fecha de Entrada</label>
+            <input type="date" id="checkInDate">
+            <span></span>
+            <label for="checkOutDate">Fecha de Salida</label>
+            <input type="date" id="checkOutDate">
+            <span></span>
+            <label for="place">Lugar</label>
+            <input type="text" id="place">
+            <span></span>
+            <label for="price">Precio</label>
+            <input type="number" step="0.01" id="price">
+        </form>
+    <button id="btnAltaEvento">Crear</button>
+</body>
+</html>

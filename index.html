@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <link rel="stylesheet" href="./css/login.css">
+    <script type="module" src="./js/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <!-- Inicio container -->
+    <div class="container">
+        <div class="header">
+            <h1>¿Oye Quedamos?</h1>
+        </div>
+       
+            <div id="inputEmail" class="input-fields">
+                <input type="email" name="email" id="email" placeholder="Correo Electrónico" autocomplete="on">
+                <span class="material-symbols-outlined" id="person">person</span>
+        </div>
+        <p id="errorEmail"></p>
+
+            <div id="inputPassword" class="input-fields">
+                <input class="password" type="password" name="password" id="password" placeholder="Contraseña" autocomplete="on">
+                <span class="material-symbols-outlined" id="eye">visibility</span>
+            </div>
+            <p id="errorPassword"></p>
+                
+            <button id="entrar" type="button">Entrar</button>
+
+            <p>¿No tienes cuenta? <span><a id="registro" href="">Registrate</a></span></p>
+            <p  id="mensajeLogin"></p>
+    </div>
+    
+    <!-- Fin container -->
+</body>
+</html>

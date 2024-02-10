@@ -1,0 +1,110 @@
+@import "./colores.css";        /*Importamos css con las variables de los colores*/
+/* @import "borderadius" */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+.container {
+    margin: 50px auto;          /*(50) Separación arriba y abajo (auto) centrado horizontal*/
+    max-width: 600px;           
+    width: 85%;
+    height: 85vh;
+    /*Para centrar en el container (combo de instrucciones)*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to bottom, var(--color-login1), var(--color-login2));
+    background-color: var(--color-fondo-contenedor);
+    border-radius: 5px;
+}
+
+h1 {
+    background-color: var(--color-fondo);
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 15px 10px var(--color-box-shadow);
+
+}
+#mensajeLogin{
+    margin-top: 30px;
+    font-size:1.5em;
+    color: var(--color-header-fondo);
+    text-align: center;
+}
+
+.input-fields {
+    width: 85%;
+    max-width: 400px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: flex;
+    background-color: var(--color-fondo-input);
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color-box-shadow);
+}
+
+input {
+    background-color: var(--color-fondo-input);
+    border: 0;
+    width: 90%;
+    font-size: 1em;
+    outline: none;      /*No aparece un recuadro al recibir el foco*/
+}
+
+button {
+    
+    padding: 10px;          /*Aporta tamaño al botón*/
+    width: 60%;                         /*Indica la anchura del botón*/
+    margin: 50px 0px 80px 0px;          /*arriba dcha abajo izd (Separación con los demás elementos*/
+    background-color: var(--color-boton);
+    color: var(--color-boton-letras);
+    font-size: 1em;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color-box-shadow);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+button:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.error {
+    border-style: outset;
+    border-color: var(--color-error);
+    animation-name: vibrar;
+    animation-duration: .5s;
+}
+
+#errorEmail,
+#errorPassword,
+#errorLogin {
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-error);
+    
+}
+/*Animación de vibración en caso de error*/
+@keyframes vibrar {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+   
+   

@@ -1,0 +1,32 @@
+@import "./colores.css";
+
+*, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color:var(--color-header-fondo); 
+    overflow: hidden; /*Cuando un elemento desborde será invisible*/
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-align: center; /* Centra el texto de los enlaces */
+    flex-grow: 1; /* Hace que cada enlace crezca para ocupar el espacio disponible */
+    padding: 14px 0; /* espacio arriba/abajo y izq/dcha*/
+    color: var(--color-header-letras);
+    size: 0.5em;
+    text-decoration: none; /* elimina el subrayado de los enlaces*/
+    text-transform: capitalize;
+}
+
+/* Cambiar el color de fondo de los enlaces al pasar el mouse */
+nav a:hover {
+    background-color: #111;
+}

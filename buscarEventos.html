@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script type="module" src="./js/utils.js"></script>
+    <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./js/buscarEventos.js"></script>
+    <title>Buscar Eventos</title>
+</head>
+<body>
+    <header>
+        <h1>Buscar eventos</h1>
+    </header>
+    <!-- barra de navegación -->
+    <div id="navbarContainer"></div>
+
+        <!-- inicio -->
+        <div class="container">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email" >
+            <label for="idEvento">Número de evento</label>
+            <input type="number" name="idEvento" id="idEvento">
+            <!-- mensaje -->
+            <p id="mensaje"></p>
+            <!-- botones -->
+            <button type="button" id="btnBuscar">Buscar</button>
+            <!-- <input type="text" id="opcionSeleccionada" placeholder="# opción">
+            <button type="button" id="AnadirOpcion">Añadir opción</button> -->
+            <div id="evento"></div>
+        </div>
+</body>
+</html>

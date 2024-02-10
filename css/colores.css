@@ -1,0 +1,24 @@
+/* coolors.co  genera una paleta de colores*/
+:root {
+  --color-login1:orange;    /*linear gradient*/
+  --color-login2:yellow;
+
+  --color-header-fondo: rgb(5, 5, 110);
+  --color-header-letras: white;
+  --color-fondo-input: wheat;
+  --color-fondo-contenedor: lightgrey;
+  --color-fondo: wheat;
+  --color-box-shadow:rgba(0, 0, 0, .5);
+  --color-boton: blue;
+  --color-boton-hover:#291085;
+  --color-boton-letras:white;
+  
+  --primary-color: #5BC0BE;
+  --primary-color-dark: #3A506B;
+  --secondary-color: #1C2541;
+  --scondary-color-dark: #0B132B;
+  --grey-color: #333;
+
+  --color-error:rgb(255, 0, 0);
+  
+  }
