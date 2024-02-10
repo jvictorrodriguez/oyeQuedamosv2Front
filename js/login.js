@@ -1,5 +1,5 @@
 //imports
-import { esUnPasswordValido, esUnEmailValido } from "./utils.js";
+import { esUnPasswordValido, esUnEmailValido, host } from "./utils.js";
 // window.hostAddress = 'https://oyequedamosv2-production.up.railway.app';
 
 

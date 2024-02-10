@@ -1,5 +1,5 @@
 //imports
-import { esUnPasswordValido, esUnEmailValido} from "./utils.js";
+import { esUnPasswordValido, esUnEmailValido, host} from "./utils.js";
 
 //Elementos del DOM
 //Inputs
