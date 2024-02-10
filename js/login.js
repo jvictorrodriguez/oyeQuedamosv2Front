@@ -1,7 +1,5 @@
 //imports
 import { esUnPasswordValido, esUnEmailValido, host } from "./utils.js";
-// window.hostAddress = 'https://oyequedamosv2-production.up.railway.app';
-
 
 //Elementos del DOM
 //Inputs
@@ -28,9 +26,7 @@ let response;
 const registroEl= document.getElementById("registro");
 const registro="./registro.html";
 const main="./main.html";
-const host = window.hostAddress;
 const urlLogin  = host + "/api/v1/user/signIn"
-// const host = 'http://localhost:8080';
 
 //==================== F U N C I O N E S ====================
 // Función que muestra/oculta el password

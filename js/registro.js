@@ -29,8 +29,6 @@ let response;
 let emailOk, nombreOk, apellidosOk, fechaOk, passwordOk, password2Ok;
 
 //Enlaces
-// const host = 'http://localhost:8080';
-const host = window.hostAddress;
 const urlAltaUsuario =  host + "/api/v1/user/signUp";
 const login="index.html";
 
