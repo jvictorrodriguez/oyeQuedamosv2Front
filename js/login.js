@@ -12,6 +12,9 @@ const eyeEl=document.getElementById("eye");
 //Button
 const entrarEl=document.getElementById("entrar");
 
+//Link
+const registroEl= document.getElementById("registro");
+
 //mensajes
 const errorEmailEl= document.getElementById("errorEmail");
 const errorPasswordEl= document.getElementById("errorPassword");
@@ -23,7 +26,6 @@ let emailOK, passwordOK;
 let response;
 
 //Enlaces
-const registroEl= document.getElementById("registro");
 const registro="./registro.html";
 const main="./main.html";
 const urlLogin  = host + "/api/v1/user/signIn"
@@ -67,13 +69,17 @@ function comprobarPassword(){
 //============= IR A REGISTRO  ===============
 function irARegistro(){
   //Abre la ventana para registra un nuevo usuario
-    window.open(registro);
+    
+  // window.open(registro);
+    // window.open(registro, '_self');
 }
 
 //============= IR A MAIN  ===============
 function irAMain(){
   //Abre la ventana principal una vez el usuario está registrado
-  window.open(main);
+  // window.open(main);
+  window.open(main, '_self');
+
 }
 
 
@@ -83,6 +89,7 @@ async function entrarFunction() {
   mensajeConexionEl.textContent="";
   emailOK= comprobarEmail();
   passwordOK= comprobarPassword();
+
   if(emailOK && passwordOK){
   //Los campos están correctamente informados
   }else{

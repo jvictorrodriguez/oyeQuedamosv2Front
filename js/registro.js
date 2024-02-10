@@ -145,7 +145,7 @@ async function altaUsuario(){
 
   //============= FUNCIÓN ATRÁS ===============
 function atras(){
-   window.open(login);
+   window.open(login,"_self");
 }
 
 //==================== L I S T E N E R S ====================
