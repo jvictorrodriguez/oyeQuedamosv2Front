@@ -44,7 +44,7 @@ function muestraDatos(events){
 
     let descriptionEl = document.createElement("a");
     descriptionEl.href=detalleEvento+idEvento;
-    descriptionEl.innerText= event.description;
+    descriptionEl.innerText= event.id+" "+event.description;
 
     
     let labelFechaLlegadaEl = document.createElement("label");

@@ -76,9 +76,9 @@ async function buscarEvento(){
         }else{
             mensajeEl.textContent="";
             muestraDatos(evento);
-            console.log(evento)    ;
+            // console.log(evento)    ;
             // muestraDatos2(eventoEl, mapEtiqEvento, evento);
-            muestraDatosExp(evento,eventoEl);
+            // muestraDatosExp(evento,eventoEl);
         }
     }
 }

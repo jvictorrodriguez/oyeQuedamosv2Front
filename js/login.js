@@ -30,6 +30,9 @@ const registro="./registro.html";
 const main="./main.html";
 const urlLogin  = host + "/api/v1/user/signIn"
 
+//Borramos las cookies
+document.cookie ="Authorization="+''+";path=/"
+
 //==================== F U N C I O N E S ====================
 // Función que muestra/oculta el password
 // También cambia el icono mostrar/ocultar
@@ -120,6 +123,7 @@ async function entrarFunction() {
           case 200: mensajeConexionEl.textContent=  "Hola " + await response.text();
                   //Guardamos cookie de las credenciales
                   document.cookie ="Authorization="+credenciales + ";path=/"
+
                   setTimeout(function(){
                       mensajeConexionEl.innerHTML= "";
                       irAMain();

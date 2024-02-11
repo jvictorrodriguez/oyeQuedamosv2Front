@@ -19,11 +19,8 @@ export function esUnPasswordValido(password){
 // 
     
 export function muestraDatosExp(data, elementoPadre){
-
-
   let eventosValores=["id","description","status","checkInDate","checkOutDate","place","price"];
   let listaOpcionesValores =["id","mail","price","place"];
-
 
   eventosValores.forEach(campo=>{
   // Concatenar el nombre del campo con el valor correspondiente
@@ -68,85 +65,3 @@ export function crearElementosDom(elementoPadre, tipoElemento, id, textContent, 
   elementoHijo.id = etiqueta  + id;
   elementoPadre.appendChild(elementoHijo);
 }
-
-
-
-// export async function getDatos(apiUrl,credenciales,metodo, objeto,respuesta){
-  //     let data;
-  //     let requestOptions;
-  //     switch (metodo) {
-  //         case "GET"://sin body
-  //             requestOptions = {
-  //                 method: metodo,
-  //                 headers: {
-  //                 'Content-Type': 'application/json',
-  //                 'Authorization': 'Basic ' + credenciales
-  //                 },
-  //             };
-  //            break;
-  //         case "POST":
-  //             requestOptions = {
-  //                 method: metodo,
-  //                 headers: {
-  //                 'Content-Type': 'application/json',
-  //                 'Authorization': 'Basic ' + credenciales
-  //                 },
-  //                 body: JSON.stringify(objeto),
-  //             };
-  //            break;
-  //            case "REGISTER": //sin Authorization
-  //             requestOptions = {
-  //                 method: "POST",
-  //                 headers: {
-  //                 'Content-Type': 'application/json',
-  //                 },
-  //                 body: JSON.stringify(objeto),
-  //             };
-  //            break;
-  //           case "LOGIN": //con body vacío
-  //           requestOptions = {
-  //             method: "POST",
-  //             headers: {
-  //             'Content-Type': 'application/json',
-  //             'Authorization': 'Basic ' + credenciales
-  //             },
-  //             body: JSON.stringify(),
-  //         };
-  //             break;
-  //         default:
-  //            console.log("Método erróneo");
-  //        }
-  
-  //        try{
-  
-  //        return await fetch(apiUrl, requestOptions);
-  
-  //         // if(!response.ok){
-  //         //   return response.text().then(text => { throw new Error(text) })
-  //         // }
-    
-    
-  //         //  if(response.status==200||response.status==201||response.status==400){
-  //               switch(respuesta){
-  //                 case "JSON":
-  //                   return await response.json();
-  //                 case "TEXT":
-  //                   return await response.text();
-  //               }
-            
-  //           // if (response.status==400){
-  //           //   return await response.text();
-  //           // }  
-  //           //       if (response.status==401){
-  //           //   return response.status+"&"+"Usuario o contraseña errónea";
-  //           // }
-  
-  //         } catch (error) {
-  //           // console.error('Hubo un error al realizar la solicitud:', error);
-  //           return "500&Error de conexión con el servidor. " +  error.message;
-    
-         
-      
-  //     }
-  // }
-  
